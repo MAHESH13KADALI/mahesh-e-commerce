@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all products | E-commerce Website Page</title>
+    <link rel="stylesheet" href="e-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="header ">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="persistant.webp" width="125px" >
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="e-products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="f2cart.png" width="30px" height="30px">
+                <img src="menu15.png" class="menu-icon" onclick="menutoggle()">
+             </div>
+        </div>
+    </div>
+    <!------cart items----->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>product</th>
+                <th>quantity</th>
+                <th>sub-total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="shirt1.jpg">
+                        <div>
+                            <p>highlander shirt</p>
+                            <small>price: ₹5000.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1">
+                    <td>
+                        ₹5000.00
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="shoe1.jpg">
+                        <div>
+                            <p>Sparx Loafers</p>
+                            <small>price: ₹850.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1">
+                    <td>
+                        ₹850.00
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="smw3.jpg">
+                        <div>
+                            <p>Realme smart watch</p>
+                            <small>price: ₹2500.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1">
+                    <td>
+                        ₹2500.00
+                    </td>
+            </tr>
+        </table>
+        <div class="total-price totalPrice">
+            <table>
+                <tr>
+                    <td>sub-total</td>
+                    <td>₹8350.00</td>
+                </tr>
+                <tr>
+                    <td>gst</td>
+                    <td>₹1020.00</td>
+                </tr>
+                <tr>
+                    <td>flat-form fee</td>
+                    <td>₹2.00</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td>₹850.00</td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td>₹7300.00</td>
+                </tr>
+            </table>
+            <div class="done">
+                <a href="payment.html"> <button type="submit" class="btn" onclick="openPopup()">Next</button></a>
+            </div>
+        </div>
+    </div>
+    
+
+
+           
+
+
+<!------footer------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App For Android and Ios mobile Phone.</p>
+                <div class="app-logo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="persistant.webp">
+                <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+            </div>
+             <div class="footer-col-3">
+                <h3>useful links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>blog post</li>
+                    <li>return policy</li>
+                    <li>join affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                    <li>twitter</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">copyright 2025 - Persistant store</p>
+    </div>
+</div>
+<!--------js toggle----------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                     MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+   
+</body>
+</html>
